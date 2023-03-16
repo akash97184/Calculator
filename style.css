@@ -1,0 +1,132 @@
+/* Body */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+    max-width: 335px;
+    margin: 0 auto;
+    background-color: #212121;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display */
+.display {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+.display input[type="text"] {
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 100%;
+    text-align: right;
+}
+
+/* Buttons */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+button {
+    background-color: #4d4d4d;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    padding: 16px;
+    width: 74px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #616161;
+}
+
+/* Operators */
+.operator {
+    background-color: #ff9500;
+    color: #ffffff;
+}
+
+.operator:hover {
+    background-color: #ffa033;
+}
+
+/* Clear button */
+.calculator .button-row:first-child button:first-child {
+    background-color: #b71c1c;
+}
+
+.calculator .button-row:first-child button:first-child:hover {
+    background-color: #dc2e2e;
+}
+
+/* Backspace button */
+.calculator .button-row:first-child button:nth-child(2) {
+    background-color: #424242;
+}
+
+.calculator .button-row:first-child button:nth-child(2):hover {
+    background-color: #5a5a5a;
+}
+
+/* Percentage button */
+.calculator .button-row:first-child button:nth-child(3) {
+    background-color: #424242;
+}
+
+.calculator .button-row:first-child button:nth-child(3):hover {
+    background-color: #5a5a5a;
+}
+
+/* Divide button */
+.calculator .button-row:first-child button:nth-child(4) {
+    background-color: #424242;
+}
+
+.calculator .button-row:first-child button:nth-child(4):hover {
+    background-color: #5a5a5a;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .calculator {
+        max-width: 100%;
+    }
+
+    button {
+        width: 25%;
+    }
+
+    .button-row {
+        flex-wrap: wrap;
+    }
+
+    .display input[type="text"] {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .calculator {
+        padding: 10px;
+    }
+
+    .button-row {
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+}
